@@ -186,5 +186,91 @@ input[type=text], select, textarea {
       margin-left:30%;
   }
 
+@media only screen and (max-width:480px){
 
+body{
+    background-color:whitesmoke;
+}
+
+    .container{
+        display: flex;
+        display: block;
+        align-items: center;
+    }
+
+    .title{
+        position: relative;
+        top: 30px;
+        
+    }
+    .nav-wrapper{
+        text-align: center;
+        
+    }
+    .right-side{
+        display: none;
+    }
+
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .portfolio-img-background{
+        width: 100%;
+        background-size: cover;
+    }
+
+    .img-text-wrapper:hover .subtitle{
+        text-align: center;
+        filter: invert(1) grayscale(1) contrast(9) drop-shadow(.05em .05em white);
+    }
+
+    .footer-item{
+       display: none;
+    }
+
+    /*second page*/
+
+    div.content-form{
+        display: block;
+        text-align: center;  
+    }
+
+    form{
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+       
+
+}
+
+/*about page*/
+
+.two-column-wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.profile-content-wrapper {
+   line-height: 25px;
+}
+
+/*location*/
+
+.map-responsive {
+    margin-top: 20%;
+    position: relative;
+    padding-bottom: 75%; 
+    overflow: hidden;
+}
+.map-responsive iframe {
+    position: absolute;
+    margin-left: 25%;
+    width: 50% !important;
+    height: 50% !important; 
+}
+
+
+}
 
