@@ -226,7 +226,10 @@ body{
     }
 
     .footer-item{
-       display: none;
+       background-color: lightgray;
+    }
+    footer{
+        margin-top: 50%;
     }
 
     /*second page*/
@@ -234,6 +237,7 @@ body{
     div.content-form{
         display: block;
         text-align: center;  
+        margin-left: 20%;
     }
 
     form{
@@ -259,16 +263,19 @@ body{
 /*location*/
 
 .map-responsive {
-    margin-top: 20%;
     position: relative;
     padding-bottom: 75%; 
+    height: 0;
     overflow: hidden;
+    margin-right:20%;
 }
 .map-responsive iframe {
     position: absolute;
-    margin-left: 25%;
-    width: 50% !important;
-    height: 50% !important; 
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
 }
 
 
