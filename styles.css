@@ -82,6 +82,7 @@ body{
     background-repeat: no-repeat;
 }
 
+
 .img-text-wrapper{
     position: absolute;
     top: 0;
@@ -90,15 +91,15 @@ body{
     justify-content: center;
     align-items: center;
     height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 220px;
 }
 
 .img-text-wrapper .subtitle{
     transition: 1s;
     color: transparent;
     font-weight: 600;
+    margin: 10px 52px 10px 0;
+    
 }
 
 .img-text-wrapper:hover .subtitle{
@@ -113,7 +114,6 @@ body{
 }
 
 .active{
-    text-decoration: none;
     color: white;
 }
 
@@ -186,7 +186,7 @@ input[type=text], select, textarea {
       margin-left:30%;
   }
 
-@media only screen and (max-width:480px){
+  @media (min-width: 320px) and (max-width: 480px){
 
 body{
     background-color:whitesmoke;
@@ -211,6 +211,8 @@ body{
         display: none;
     }
 
+    /*Portfolio */
+
     .portfolio-items-wrapper{
         display: grid;
         grid-template-columns: 1fr ;
@@ -220,9 +222,16 @@ body{
         background-size: cover;
     }
 
-    .img-text-wrapper:hover .subtitle{
-        text-align: center;
-        filter: invert(1) grayscale(1) contrast(9) drop-shadow(.05em .05em white);
+    .img-text-wrapper {
+        position: relative;
+    }
+    .img-text-wrapper .subtitle{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
     }
 
     .footer-item{
@@ -278,6 +287,70 @@ body{
 }
 }
 
+@media (min-width: 481px) and (max-width: 767px){
 
+    /*nav-style*/
+    .nav-wrapper .left-side{
+        display: flex;
+        display: block;
+        justify-content: center;
+        margin-left: 45%;
+    }
+
+    .nav-wrapper .right-side{
+        display: none;
+    }
+    /*Portfolio */
+
+    .content-wrapper{
+        width: 100%;
+    }
+
+    .portfolio-img-background{
+        width: 100%;
+    }
+    .img-text-wrapper .subtitle{
+        color: white;
+        position: absolute;
+        left: 30%;
+        margin-top: 80%;
+    }
+
+    /*about*/
+
+    .content-wrapper{
+        text-align: justify;
+        width: 100%;
+    }
+
+    .two-column-wrapper{
+        display: block;
+        margin:0 auto;
+    }
+    /*location*/
+
+    .map-responsive{
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .map-responsive iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    }
+
+    /*footer*/
+
+    footer{
+        margin-top: 50%;
+        background-color: lightgray;
+    }
 }
+
 
